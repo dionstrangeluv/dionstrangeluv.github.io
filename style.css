@@ -270,3 +270,18 @@ body {
   .info-grid { grid-template-columns: 1fr; }
   .menu-bar { gap: 0.8rem; font-size: 0.7rem; }
 }
+
+
+
+/* ===== ENLACES EN PROYECTOS ===== */
+.experience p a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.experience p a:hover {
+  text-decoration: underline;
+  color: #d4649a;
+}
