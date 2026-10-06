@@ -2,76 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dionstrangeluv · Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Dion Strangelove | Portfolio</title>
+  <meta http-equiv="refresh" content="0; url=./es/">
+  <script>
+    const userLang = (navigator.language || navigator.userLanguage || 'es').toLowerCase();
+    if (userLang.startsWith('es')) {
+      window.location.replace('./es/');
+    } else {
+      window.location.replace('./en/');
+    }
+  </script>
 </head>
 <body>
-
-<main class="window explorer" id="inicio">
-  <div class="titlebar">FILE EXPLORER-PROJECTS<span class="btns"><b>▼</b><b>▲</b></span></div>
-  <nav class="menubar">
-    <a href="#inicio" class="active">Home</a>
-    <a href="#sobre-mi">About</a>
-    <a href="#proyectos">Projects</a>
-    <a href="#contacto">Contact</a>
-  </nav>
-
-  <div class="explorer-body">
-
-    <section class="window notepad" id="sobre-mi">
-      <div class="titlebar">NOTEPAD.EXE-about_me.txt<span class="btns"><b>▼</b><b>▲</b></span></div>
-      <div class="menubar"><span>File</span><span>Options</span><span>Window</span><span>Help</span></div>
-      <div class="content">
-        <h1>about me</h1>
-
-        <div class="about">
-          <div class="photo">?</div>
-          <div>
-            <p>NAME: Dion<br>
-            OCCUPATION: historiadora &amp; científica de la información<br>
-            LOCATION: [tu ciudad]</p>
-            <p>Welcome to my personal website! This site serves as a little blog and a projection of my thoughts on screen. I have a passion for history, information science, and digital art.</p>
-            <p>Soy una mujer multifacética que constantemente se está redescubriendo. Soy una científica social que observa y estudia los fenómenos sociales a través de convicciones y principios.</p>
-            <p>Mi trabajo combina la investigación histórica con herramientas digitales, la organización del conocimiento y la escritura.</p>
-          </div>
-        </div>
-
-        <p class="label">SKILLS:</p>
-        <p>investigación histórica · organización del conocimiento · escritura<br>
-        herramientas digitales: HTML, CSS, Git</p>
-
-        <p class="label">EDUCATION:</p>
-        <p>[Tu carrera] · [Tu universidad]</p>
-      </div>
-    </section>
-
-    <div class="left">
-      <div class="notepad-space"></div>
-      <section id="proyectos">
-        <p class="label">PROJECTS:</p>
-        <ul class="files">
-          <li><a href="https://historiannerdstuff.tiddlyhost.com">Historian nerd stuff</a><span>TiddlyWiki</span></li>
-          <li><a href="https://github.com/dionstrangeluv/dionstrangeluv.github.io">Este portafolio</a><span>GitHub Pages</span></li>
-          <li><a href="#">Nombre del proyecto 3</a><span>Descripción breve</span></li>
-        </ul>
-      </section>
-    </div>
-
-    <aside class="contact" id="contacto">
-      <p class="label">CONTACT INFO</p>
-      <p>github:<br><a href="https://github.com/dionstrangeluv">github.com/dionstrangeluv</a></p>
-      <p>email:<br>[tucorreo@ejemplo.com]</p>
-      <p>cv:<br><a href="cv.pdf">cv.pdf</a></p>
-    </aside>
-
-  </div>
-
-  <div class="statusbar"><span>C:\portfolio\about_me.txt</span><span>1 of 1</span></div>
-</main>
-
+  <p>Redirigiendo... <a href="./es/">Español</a> | <a href="./en/">English</a></p>
 </body>
 </html>
