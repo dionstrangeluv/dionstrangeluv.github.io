@@ -4,92 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dionstrangeluv | Portafolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#inicio" class="logo">Dionstrangeluv</a>
-      <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- ===== VENTANA PRINCIPAL ===== -->
+  <div class="window">
 
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <img src="https://via.placeholder.com/150" alt="Tu foto" class="profile-pic">
-      <h1>Hola, soy <span class="highlight">Dionstrangeluv</span></h1>
-      <p class="subtitle">Profesional en ciencia de la información | Historiadora | Investigadora</p>
-      <p class="description">
-        Bienvenido a mi portafolio. Aquí encontrarás algunos de mis proyectos,
-        investigaciones y trabajos más recientes.
-      </p>
-      <div class="hero-buttons">
-        <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-        <a href="#" class="btn btn-secondary">Descargar CV</a>
+    <!-- Barra de título -->
+    <div class="title-bar">
+      <span class="title-bar-text">NOTEPAD.EXE — about_me.txt</span>
+      <div class="title-bar-buttons">
+        <span>_</span><span>□</span><span>×</span>
       </div>
     </div>
-  </section>
 
-  <section id="sobre-mi" class="section">
-    <h2 class="section-title">Sobre mí</h2>
-    <div class="about-content">
-      <p>
-        Soy una mujer multifacética que constantemente se está redescubriendo. Soy una científica social que observa y estudia los fenómenso sociales a través de convicciones y principios como los derechos humanos, el libre acceso a la información; así mismo, soy una observadora de mi presente através del pasado.
-        Me interesa el servicio al cliente y la experiencia en usuario, tengo experiencia con servicio al cliente y productos bancarios y financieros.
-      </p>
-      <h3>Habilidades</h3>
-      <div class="skills">
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Investigación</span>
-        <span class="skill-tag">Redacción</span>
-      </div>
+    <!-- Menú -->
+    <div class="menu-bar">
+      <span>FILE</span>
+      <span>OPTIONS</span>
+      <span>WINDOW</span>
+      <span>HELP</span>
     </div>
-  </section>
 
-  <section id="proyectos" class="section">
-    <h2 class="section-title">Proyectos</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Nombre del Proyecto 1</h3>
-        <p>Descripción breve del proyecto.</p>
-        <div class="project-tags"><span>HTML</span><span>CSS</span></div>
-        <a href="https://github.com/dionstrangeluv" target="_blank" class="project-link">Ver en GitHub →</a>
+    <!-- Contenido -->
+    <div class="window-content">
+
+      <h1 class="big-title">about me</h1>
+
+      <div class="about-grid">
+
+        <!-- Foto + sticker decorativo -->
+        <div class="about-photo">
+          <img src="https://placehold.co/220x220/f5d5e0/3d3d3d?text=Tu+Foto" alt="Tu foto">
+          <span class="sticker">🐱</span>
+        </div>
+
+        <!-- Datos -->
+        <div class="about-data">
+          <p><strong>NAME:</strong> Tu Nombre</p>
+          <p><strong>AGE:</strong> Tu edad</p>
+          <p><strong>LOCATION:</strong> Tu ciudad</p>
+          <p><strong>OCCUPATION:</strong> Tu ocupación</p>
+
+          <p class="bio">
+            Escribe aquí tu biografía. Cuenta quién eres, qué estudias, qué te
+            apasiona y qué tipo de proyectos te gusta hacer. Es tu espacio
+            para presentarte como quieras.
+          </p>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Nombre del Proyecto 2</h3>
-        <p>Descripción breve del proyecto.</p>
-        <div class="project-tags"><span>Python</span><span>Data</span></div>
-        <a href="https://github.com/dionstrangeluv" target="_blank" class="project-link">Ver en GitHub →</a>
+
+      <!-- Skills y educación -->
+      <div class="info-grid">
+        <div>
+          <h2>SKILLS:</h2>
+          <p>software&gt;</p>
+          <p class="indent">Tus programas aquí</p>
+          <p>coding languages&gt;</p>
+          <p class="indent">HTML, CSS, JavaScript</p>
+        </div>
+        <div>
+          <h2>EDUCATION:</h2>
+          <p>Tu título</p>
+          <p>Tu universidad</p>
+          <p class="indent">Año — Año</p>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Nombre del Proyecto 3</h3>
-        <p>Descripción breve del proyecto.</p>
-        <div class="project-tags"><span>Investigación</span></div>
-        <a href="https://github.com/dionstrangeluv" target="_blank" class="project-link">Ver en GitHub →</a>
+
+      <!-- Experiencia -->
+      <div class="experience">
+        <h2>EXPERIENCE:</h2>
+        <p><span>Tu puesto</span> <span class="right">Fecha</span></p>
+        <p><span>Tu puesto anterior</span> <span class="right">Fecha</span></p>
       </div>
+
     </div>
-  </section>
 
-  <section id="contacto" class="section">
-    <h2 class="section-title">Contacto</h2>
-    <p class="contact-text">¿Quieres trabajar conmigo? ¡Escríbeme!</p>
-    <div class="contact-links">
-      <a href="mailto:ipialmarcela@gmail.com" class="btn btn-primary">Enviar Correo</a>
-      <a href="https://github.com/dionstrangeluv" target="_blank" class="btn btn-secondary">GitHub</a>
+    <!-- Footer tipo ruta de archivo -->
+    <div class="status-bar">
+      C:\portfolio\about_me.txt
     </div>
-  </section>
 
-  <footer class="footer">
-    <p>© 2026 Dionstrangeluv. Hecho con ❤️ y GitHub Pages.</p>
-  </footer>
+  </div>
 
 </body>
 </html>
