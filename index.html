@@ -6,90 +6,774 @@
   <title>Dionstrangeluv | Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== VENTANA PRINCIPAL ===== -->
-  <div class="window">
-
-    <!-- Barra de título -->
-    <div class="title-bar">
-      <span class="title-bar-text">NOTEPAD.EXE — about_me.txt</span>
-      <div class="title-bar-buttons">
-        <span>_</span><span>□</span><span>×</span>
-      </div>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">◆</span>
+      <span class="logo-text">DIONSTRANGELUV</span>
     </div>
-
-    <!-- Menú -->
-    <div class="menu-bar">
-      <span>FILE</span>
-      <span>OPTIONS</span>
-      <span>WINDOW</span>
-      <span>HELP</span>
+    <nav class="nav">
+      <a href="#inicio">INICIO</a>
+      <a href="#proyectos">PROYECTOS</a>
+      <a href="#sobre-mi">SOBRE MÍ</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+    <div class="header-icons">
+      <span>♥</span>
+      <span>☺</span>
+      <span>✉</span>
     </div>
+  </header>
 
-    <!-- Contenido -->
-    <div class="window-content">
+  <!-- ===== HERO / MAIN GRID ===== -->
+  <main class="main-grid">
 
-      <h1 class="big-title">about me</h1>
+    <!-- Columna principal -->
+    <div class="content-column">
 
-      <div class="about-grid">
+      <!-- Bloque hero -->
+      <section class="hero-block" id="inicio">
+        <h1 class="hero-title">
+          Abriendo un mundo de<br>
+          <span class="accent-red">historias asombrosas</span><br>
+          en cada página
+        </h1>
+        <p class="hero-subtitle">
+          Portafolio de una científica de la información e historiadora<br>
+          que investiga, escribe y organiza el conocimiento.
+        </p>
+      </section>
 
-        <!-- Foto + sticker decorativo -->
-        <div class="about-photo">
-          <img src="https://placehold.co/220x220/f5d5e0/3d3d3d?text=Tu+Foto" alt="Tu foto">
-          <span class="sticker">🐱</span>
+      <!-- Bloque de proyecto destacado -->
+      <section class="featured-block">
+        <h2 class="section-title">DESTACADO</h2>
+        <div class="featured-card">
+          <div class="card-info">
+            <div class="card-header">
+              <span class="badge badge-blue">PROYECTO 1</span>
+              <span class="badge badge-green">EN CURSO</span>
+            </div>
+            <div class="price">2026</div>
+            <div class="publisher">Investigación</div>
+            <button class="btn-cart">VER PROYECTO</button>
+            <p class="card-desc">
+              Descripción breve del proyecto. Qué hiciste, con qué tecnologías
+              y qué resultado obtuviste.
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="https://placehold.co/300x300/e63946/ffffff?text=Proyecto" alt="Proyecto">
+          </div>
         </div>
+      </section>
 
-        <!-- Datos -->
-        <div class="about-data">
-          <p><strong>NAME:</strong> Tu Nombre</p>
-          <p><strong>AGE:</strong> Tu edad</p>
-          <p><strong>LOCATION:</strong> Tu ciudad</p>
-          <p><strong>OCCUPATION:</strong> Tu ocupación</p>
+      <!-- Grid de proyectos -->
+      <section class="projects-section" id="proyectos">
+        <h2 class="section-title">PROYECTOS RECIENTES</h2>
+        <div class="projects-grid">
 
-          <p class="bio">
-            Escribe aquí tu biografía. Cuenta quién eres, qué estudias, qué te
-            apasiona y qué tipo de proyectos te gusta hacer. Es tu espacio
-            para presentarte como quieras.
+          <div class="project-card">
+            <div class="card-header">
+              <span class="badge badge-blue">PROYECTO</span>
+            </div>
+            <div class="project-image">
+              <img src="https://placehold.co/300x200/457b9d/ffffff?text=Proyecto+2" alt="Proyecto 2">
+            </div>
+            <div class="card-footer">
+              <span class="date">01.01</span>
+              <span class="time">2026</span>
+            </div>
+            <p class="card-desc">Nombre del proyecto 2</p>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <span class="badge badge-green">INVESTIGACIÓN</span>
+            </div>
+            <div class="project-image">
+              <img src="https://placehold.co/300x200/7ac74f/ffffff?text=Proyecto+3" alt="Proyecto 3">
+            </div>
+            <div class="card-footer">
+              <span class="date">02.02</span>
+              <span class="time">2026</span>
+            </div>
+            <p class="card-desc">Nombre del proyecto 3</p>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <span class="badge badge-red">ESCRITURA</span>
+            </div>
+            <div class="project-image">
+              <img src="https://placehold.co/300x200/f4d35e/1a1a1a?text=Proyecto+4" alt="Proyecto 4">
+            </div>
+            <div class="card-footer">
+              <span class="date">03.03</span>
+              <span class="time">2026</span>
+            </div>
+            <p class="card-desc">Nombre del proyecto 4</p>
+          </div>
+
+        </div>
+        <button class="btn-view-all">VER TODOS</button>
+      </section>
+
+      <!-- Bloque sobre mí -->
+      <section class="about-block" id="sobre-mi">
+        <div class="about-text">
+          <h2 class="section-title">SOBRE MÍ</h2>
+          <p>
+            Soy una mujer multifacética que constantemente se está redescubriendo.
+            Soy una científica social que observa y estudia los fenómenos sociales
+            a través de convicciones y principios.
+          </p>
+          <p>
+            Mi trabajo combina la investigación histórica con herramientas
+            digitales, la organización del conocimiento y la escritura.
           </p>
         </div>
-      </div>
-
-      <!-- Skills y educación -->
-      <div class="info-grid">
-        <div>
-          <h2>SKILLS:</h2>
-          <p>software&gt;</p>
-          <p class="indent">Tus programas aquí</p>
-          <p>coding languages&gt;</p>
-          <p class="indent">HTML, CSS, JavaScript</p>
+        <div class="about-illustration">
+          <img src="https://placehold.co/200x200/f5ebe0/1a1a1a?text=Yo" alt="Ilustración">
         </div>
-        <div>
-          <h2>EDUCATION:</h2>
-          <p>Tu título</p>
-          <p>Tu universidad</p>
-          <p class="indent">Año — Año</p>
-        </div>
-      </div>
+      </section>
 
-      <!-- Experiencia -->
-      <div class="experience">
-        <h2>EXPERIENCE:</h2>
-        <p><span>Tu puesto</span> <span class="right">Fecha</span></p>
-        <p><span>Tu puesto anterior</span> <span class="right">Fecha</span></p>
-      </div>
+      <!-- Bloque contacto -->
+      <section class="contact-block" id="contacto">
+        <h2 class="section-title">SUSCRÍBETE A MI NEWSLETTER</h2>
+        <p class="contact-subtitle">
+          Recibe actualizaciones sobre mis investigaciones, proyectos y notas.
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="¿Cómo te llamas?">
+          <input type="email" placeholder="Tu email">
+          <button type="submit">SUSCRIBIRME</button>
+        </form>
+      </section>
 
     </div>
 
-    <!-- Footer tipo ruta de archivo -->
-    <div class="status-bar">
-      C:\portfolio\about_me.txt
-    </div>
+    <!-- Columna lateral -->
+    <aside class="sidebar-column">
 
-  </div>
+      <div class="sidebar-widget">
+        <h3>CATÁLOGO</h3>
+        <input type="text" placeholder="Buscar..." class="sidebar-search">
+      </div>
+
+      <div class="sidebar-widget sidebar-featured">
+        <h3>HISTORIAN NERD STUFF</h3>
+        <p>Abre un mundo de historias asombrosas en cada página.</p>
+        <img src="https://placehold.co/150x150/7ac74f/ffffff?text=🐸" alt="Mascota">
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>NOVEDADES</h3>
+        <div class="sidebar-item">
+          <span class="badge badge-green">NUEVO</span>
+          <p>Último proyecto publicado</p>
+        </div>
+        <div class="sidebar-item">
+          <span class="badge badge-blue">EN CURSO</span>
+          <p>Investigación actual</p>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>PRÓXIMOS EVENTOS</h3>
+        <p class="sidebar-text">Seminario de historia política</p>
+        <p class="sidebar-date">Julio 2026</p>
+        <div class="sidebar-item-mini">
+          <img src="https://placehold.co/60x60/457b9d/ffffff?text=📚" alt="Evento">
+          <span>04.07</span>
+        </div>
+      </div>
+
+      <div class="sidebar-widget sidebar-about">
+        <h3>SOBRE ESTE SITIO</h3>
+        <p>
+          Este es mi espacio personal donde reúno investigación, proyectos
+          y notas. Cada sección es una ventana a un tema distinto.
+        </p>
+      </div>
+
+      <div class="sidebar-widget sidebar-subscribe">
+        <h3>SUSCRÍBETE</h3>
+        <p>Recibe novedades en tu email.</p>
+        <input type="email" placeholder="Tu email">
+        <button>SUSCRIBIRME</button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <span class="logo-mark">◆</span>
+      <span class="logo-text">DIONSTRANGELUV</span>
+    </div>
+    <div class="footer-links">
+      <a href="#proyectos">PROYECTOS</a>
+      <a href="#sobre-mi">SOBRE MÍ</a>
+      <a href="#contacto">CONTACTO</a>
+    </div>
+    <div class="footer-contact">
+      <p>tu-correo@ejemplo.com</p>
+      <p>+00 000 000 000</p>
+    </div>
+  </footer>
 
 </body>
 </html>
+🎨 Nuevo style.css
+css
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #ffffff;
+  --bg-grid: #e8e8e8;
+  --text: #1a1a1a;
+  --text-soft: #666666;
+  --accent-red: #e63946;
+  --accent-green: #7ac74f;
+  --accent-blue: #457b9d;
+  --accent-yellow: #f4d35e;
+  --border: #d4d4d4;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 60px 60px;
+  color: var(--text);
+  line-height: 1.5;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.logo-mark {
+  color: var(--accent-red);
+  font-size: 1.2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--accent-red);
+}
+
+.header-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+/* ===== MAIN GRID ===== */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== SECCIONES ===== */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--text);
+}
+
+/* ===== HERO ===== */
+.hero-block {
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 1rem;
+}
+
+.accent-red {
+  color: var(--accent-red);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-soft);
+  max-width: 600px;
+}
+
+/* ===== FEATURED ===== */
+.featured-block {
+  margin-bottom: 3rem;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  border: 2px solid var(--text);
+}
+
+.card-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card-header {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.badge {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--text);
+  text-transform: uppercase;
+}
+
+.badge-blue {
+  background: var(--accent-blue);
+  color: white;
+  border-color: var(--accent-blue);
+}
+
+.badge-green {
+  background: var(--accent-green);
+  color: white;
+  border-color: var(--accent-green);
+}
+
+.badge-red {
+  background: var(--accent-red);
+  color: white;
+  border-color: var(--accent-red);
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.publisher {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-cart {
+  background: var(--accent-yellow);
+  border: 2px solid var(--text);
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.15s;
+  margin-top: 0.5rem;
+}
+
+.btn-cart:hover {
+  background: var(--text);
+  color: white;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.card-image {
+  border-left: 2px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== PROYECTOS GRID ===== */
+.projects-section {
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid var(--text);
+  background: var(--bg);
+}
+
+.project-card .card-header {
+  padding: 0.7rem;
+  border-bottom: 1px solid var(--text);
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-card .card-desc {
+  padding: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.btn-view-all {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+
+.btn-view-all:hover {
+  background: var(--accent-blue);
+}
+
+/* ===== SOBRE MÍ ===== */
+.about-block {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--text);
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-illustration img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid var(--text);
+}
+
+/* ===== CONTACTO ===== */
+.contact-block {
+  padding: 2rem;
+  border: 1px solid var(--text);
+  margin-bottom: 3rem;
+}
+
+.contact-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.contact-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.7rem;
+  border: 1px solid var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.contact-form button {
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background: var(--accent-blue);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-widget {
+  border: 1px solid var(--text);
+  padding: 1.2rem;
+}
+
+.sidebar-widget h3 {
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--text);
+}
+
+.sidebar-search {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.sidebar-featured {
+  background: var(--accent-green);
+  color: white;
+  border-color: var(--accent-green);
+}
+
+.sidebar-featured h3 {
+  border-bottom-color: white;
+}
+
+.sidebar-featured img {
+  width: 100%;
+  margin-top: 1rem;
+  border: 2px solid white;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-item p {
+  font-size: 0.85rem;
+}
+
+.sidebar-item-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.sidebar-item-mini img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.sidebar-date {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sidebar-text {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar-about p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.sidebar-subscribe input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  margin-bottom: 0.6rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.sidebar-subscribe button {
+  width: 100%;
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.sidebar-subscribe button:hover {
+  background: var(--accent-blue);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 2px solid var(--text);
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-links a:hover {
+  color: var(--accent-red);
+}
+
+.footer-contact {
+  text-align: right;
+  color: var(--text-soft);
+  font-size: 0.8rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+  .card-image {
+    border-left: none;
+    border-top: 2px solid var(--text);
+  }
+  .about-block {
+    grid-template-columns: 1fr;
+  }
+  .site-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .site-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+}
