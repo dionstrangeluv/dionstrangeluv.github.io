@@ -54,3 +54,58 @@ a{color:inherit}
   .titlebar{padding:3px 52px;font-size:17px}
   .menubar{gap:14px;flex-wrap:wrap}
 }
+
+
+/* ===== SELECTOR DE IDIOMA ===== */
+.lang-switch {
+  margin-left: auto;
+}
+
+.lang-btn {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  background: #f5d5e0;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 2px solid #1a1a1a;
+  border-radius: 0;
+  letter-spacing: 1px;
+  transition: all 0.15s;
+}
+
+.lang-btn:hover {
+  background: #e88fa5;
+  color: #ffffff;
+}
+
+/* ===== BLOQUE DE CONTACTO ===== */
+.contact-block {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #1a1a1a;
+}
+
+.contact-block h2 {
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  font-size: 1rem;
+  color: #e88fa5;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  font-weight: 900;
+}
+
+.contact-block p {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ===== EL MENÚ NECESITA FLEX PARA ALINEAR EL BOTÓN DE IDIOMA ===== */
+.menu-bar {
+  display: flex !important;
+  align-items: center;
+  gap: 1.5rem;
+}
